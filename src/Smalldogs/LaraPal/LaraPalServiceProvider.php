@@ -19,8 +19,6 @@ class LaraPalServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('smalldogs/larapal');
-
 		AliasLoader::getInstance()->alias('LaraPal', 'Smalldogs\LaraPal\LaraPal');
 	}
 
